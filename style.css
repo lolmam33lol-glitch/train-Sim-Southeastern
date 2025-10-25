@@ -1,0 +1,11 @@
+/* style.css */
+html, body { width:100%; height:100%; margin:0; overflow:hidden; font-family:sans-serif; background:#000; }
+#renderCanvas { width:100%; height:100%; touch-action:none; }
+.ui { position:absolute; z-index:10; left:50%; transform:translateX(-50%); bottom:10px; color:white; text-align:center; }
+.slider { width:300px; }
+button { border:none; border-radius:8px; cursor:pointer; color:white; font-weight:bold; text-shadow:1px 1px 2px #000; }
+#mainMenu, #settingsMenu, #trainSelectMenu { position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.9); display:flex; flex-direction: column; align-items:center; justify-content:center; z-index:20; }
+#menuIcon { width:40px; height:40px; position:absolute; top:10px; left:10px; cursor:pointer; }
+#speedometer { width:100px; height:100px; border-radius:50%; border:2px solid white; position:absolute; right:20px; bottom:20px; display:flex; align-items:center; justify-content:center; font-size:16px; }
+label { margin-bottom:8px; }
+.menuBtn { width:200px; height:60px; margin:10px; background-size:cover; }
