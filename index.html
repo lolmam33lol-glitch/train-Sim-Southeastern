@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Southeastern Train Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="renderCanvas"></canvas>
+
+<!-- Main Menu -->
+<div id="mainMenu">
+<h1 style="color:white">Southeastern Train Simulator</h1>
+<button id="playBtn" class="menuBtn" style="background-image:url('https://i.imgur.com/3Z6Xv5X.png')">Play</button>
+<button id="settingsBtn" class="menuBtn" style="background-image:url('https://i.imgur.com/WF3nLqM.png')">Settings</button>
+</div>
+
+<!-- Settings Menu -->
+<div id="settingsMenu">
+<h2>Settings</h2>
+<label for="controlSlider">Controls: Mobile / Computer</label><br>
+<input id="controlSlider" type="range" min="0" max="1" step="1" value="1"><br>
+<button id="backFromSettings" class="menuBtn" style="background-image:url('https://i.imgur.com/WF3nLqM.png')">Back</button>
+</div>
+
+<!-- Train Selection Menu -->
+<div id="trainSelectMenu">
+<h2>Select Train</h2>
+<button class="trainBtn" data-type="465" style="background-image:url('https://i.imgur.com/tW3kKjC.png')">Class 465</button>
+<button class="trainBtn" data-type="395" style="background-image:url('https://i.imgur.com/LFz1Pyr.png')">Class 395</button>
+<button class="trainBtn" data-type="375" style="background-image:url('https://i.imgur.com/0m8K8yN.png')">Class 375</button>
+</div>
+
+<svg id="menuIcon" viewBox="0 0 100 100">
+<path d="M10 20 H90 M10 50 H90 M10 80 H90" stroke="white" stroke-width="10" stroke-linecap="round"/>
+</svg>
+
+<div class="ui">
+<label>Throttle: <span id="speedDisplay">0</span></label><br>
+<input id="throttle" type="range" class="slider" min="0" max="1" step="0.01" value="0">
+</div>
+<div id="speedometer">0 km/h</div>
+
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
